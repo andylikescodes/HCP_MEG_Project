@@ -153,4 +153,4 @@ end
 
 * [Standard deviation](./badchannel/100307_MEG_3-Restin_baddata_badchan_cor_topo.png)
 ![std channel](./badchannel/100307_MEG_3-Restin_baddata_badchan_std_topo.png)
-![std channel](./badchannel/100307_MEG_3-Restin_baddata_badchan_std_topo.png)
+![std channel](./badchannel/100307_MEG_3-Restin_baddata_badchan_std_scatter.png)
