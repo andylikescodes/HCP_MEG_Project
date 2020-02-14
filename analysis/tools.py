@@ -317,6 +317,12 @@ def stack_channels_by_trials(trials):
         tmp[(i)*shape[0]:(i+1)*shape[0], :] = trials[:,:,i]
     return tmp
 
+def xt_xt_plus_k_corr(trials,k):
+    xt = trials[:, :-k]
+    xt_plus_k = trials[:,k:]
+    xt_xt_plus_k = np.vstack([xt, xt_plus_k])
+    return np.corrcoef(xt_xt_plus_k)
+
 def plot_correlation(corr_df, title,
                      vrange=[], figure_size=(50, 40), zero_diagonal=False, filename=None):
     
