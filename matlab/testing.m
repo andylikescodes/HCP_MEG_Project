@@ -11,7 +11,7 @@ cfg.hilbert = 'abs';
 
 [hilbert_data] = ft_preprocessing(cfg, data)
 
-plot(hilbert_data.trial{1}(1:1000));
+plot(hilbert_data.trial{1}(1:100));
 saveas(gcf, 'output/hilbert_test1.png');
 
 %cfg = [];
