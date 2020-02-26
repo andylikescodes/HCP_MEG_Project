@@ -108,8 +108,12 @@ size_sptrm = size(mtmfft_stats.cohspctrm);
 lims = [-1,1]
 
 imagesc(mtmfft_stats.cohspctrm(:,:,1), lims);
-myColorMap = [1 0 0;
-              0 0 1];
+
+red = [linspace(1,0,128), zeros(1, 128)];
+blue = [zeros(1, 128), linspace(0,1,128)];
+green = [zeros(1,256)];
+
+myColorMap = [red;blue;green]';
 
 colormap(myColorMap);
 colorbar;
