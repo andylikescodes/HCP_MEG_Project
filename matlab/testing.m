@@ -100,12 +100,19 @@ cfg.method = 'coh';
 %[mtmconvol_stats] = ft_connectivityanalysis(cfg, mtmconvol_freq);
 
 size_sptrm = size(mtmfft_stats.cohspctrm);
-for i = 1:size_sptrm(3)
-    subplot(3,5,i);
-    image(mtmfft_stats.cohspctrm(:,:,i));
-    colorbar;
-end
+%for i = 1:size_sptrm(3)
+%    subplot(3,5,i);
+%    heatmap(mtmfft_stats.cohspctrm(:,:,i));
+%end
 
+lims = [-1,1]
+
+imagesc(mtmfft_stats.cohspctrm(:,:,1), lims);
+myColorMap = [1 0 0;
+              0 0 1];
+
+colormap(myColorMap);
+colorbar;
 
 saveas(gcf, 'output/coherence_image.png');
 
