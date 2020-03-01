@@ -63,7 +63,10 @@ cfg.hilbert = 'abs';
 %saveas(gcf, 'output/hilbert_test1.png');
 
 
-
+cfg = [];
+cfg.method = 'spline';
+cfg.elec = data.grad;
+[spatial_filtered_data] = ft_scalpcurrentdensity(cfg, filter_data);
 
 % Frequency analysis;
 cfg = [];
@@ -75,7 +78,7 @@ cfg.tapsmofrq = 2;
 cfg.foilim = [8, 15];
 cfg.keeptrials = 'yes';
 cfg.keeptapers = 'yes';
-[mtmfft_freq] = ft_freqanalysis(cfg, filter_data);
+[mtmfft_freq] = ft_freqanalysis(cfg, spatial_filtered_data);
 
 
 %cfg = [];
@@ -105,19 +108,28 @@ size_sptrm = size(mtmfft_stats.cohspctrm);
 %    heatmap(mtmfft_stats.cohspctrm(:,:,i));
 %end
 
-lims = [-1,1]
+lims = [0,1];
 
-imagesc(mtmfft_stats.cohspctrm(:,:,1), lims);
+%imagesc(mtmfft_stats.cohspctrm(:,:,1), lims);
 
-red = [linspace(1,0,128), zeros(1, 128)];
-blue = [zeros(1, 128), linspace(0,1,128)];
-green = [zeros(1,256)];
+red = [ones(1,256)];
+blue = [linspace(1,0,256)];
+green = [linspace(1,0,256)];
 
-myColorMap = [red;blue;green]';
 
-colormap(myColorMap);
-colorbar;
 
+myColorMap = [red;green;green]';
+
+for i = 1:size_sptrm(3)
+    subplot(3,5,i);
+    imagesc(mtmfft_stats.cohspctrm(:,:,1),lims)
+    
+    colormap(myColorMap);
+    %colorbar;
+
+end
+
+set(gcf, 'Units', 'Inches', 'Position', [0, 0, 30, 16], 'PaperUnits', 'Inches', 'PaperSize', [30, 16]);
 saveas(gcf, 'output/coherence_image.png');
 
 %cfg = [];
