@@ -1,0 +1,1804 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+                  R2019b (9.7.0.1190202) 64-bit (glnxa64)
+                              August 21, 2019
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> >> >> the input is raw data with 241 channels and 147 trials
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+ In '/home/liang134@chapman.edu/Documents/HCP_MEG/scripts/HCP_MEG_Project/matlab/fieldtrip-20200215/utilities/private/fixsampleinfo.m' at line 82
+ In '/home/liang134@chapman.edu/Documents/HCP_MEG/scripts/HCP_MEG_Project/matlab/fieldtrip-20200215/utilities/ft_datatype_raw.m' at line 147
+ In '/home/liang134@chapman.edu/Documents/HCP_MEG/scripts/HCP_MEG_Project/matlab/fieldtrip-20200215/utilities/ft_checkdata.m' at line 268
+ In '/home/liang134@chapman.edu/Documents/HCP_MEG/scripts/HCP_MEG_Project/matlab/fieldtrip-20200215/ft_freqanalysis.m' at line 212
+
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In fixsampleinfo (line 94)
+  In ft_datatype_raw (line 147)
+  In ft_checkdata (line 268)
+  In ft_freqanalysis (line 212)
+  In coherence_analysis (line 21)
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 8 MB
+Default cfg.pad='maxperlen' can run slowly. Consider using cfg.pad='nextpow2' for more efficient FFT computation.
+processing trials
+processing trial 1/147 nfft: 1018 samples, datalength: 1018 samples, 1 tapersprocessing trial 2/147 nfft: 1018 samples, datalength: 1018 samples, 1 tapersprocessing trial 9/147 nfft: 1018 samples, datalength: 1018 samples, 1 tapersprocessing trial 25/147 nfft: 1018 samples, datalength: 1018 samples, 1 tapersprocessing trial 43/147 nfft: 1018 samples, datalength: 1018 samples, 1 tapersprocessing trial 59/147 nfft: 1018 samples, datalength: 1018 samples, 1 tapersprocessing trial 76/147 nfft: 1018 samples, datalength: 1018 samples, 1 tapersprocessing trial 92/147 nfft: 1018 samples, datalength: 1018 samples, 1 tapersprocessing trial 109/147 nfft: 1018 samples, datalength: 1018 samples, 1 tapersprocessing trial 126/147 nfft: 1018 samples, datalength: 1018 samples, 1 tapersprocessing trial 143/147 nfft: 1018 samples, datalength: 1018 samples, 1 tapersprocessing trial 147/147 nfft: 1018 samples, datalength: 1018 samples, 1 tapers
+the call to "ft_freqanalysis" took 2 seconds and required the additional allocation of an estimated 120 MB
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 66 MB
+the call to "ft_selectdata" took 41 seconds and required the additional allocation of an estimated 215 MB
+the call to "ft_connectivityanalysis" took 279 seconds and required the additional allocation of an estimated 15737 MB
+>> >> >> >> 
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=0.4996.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=0.4996.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=0.9993.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=0.9993.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=1.4989.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=1.4989.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=1.9985.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=1.9985.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=2.4982.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=2.4982.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=2.9978.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=2.9978.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=3.4974.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=3.4974.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=3.9971.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=3.9971.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=4.4967.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=4.4967.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=4.9963.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=4.9963.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=5.4960.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=5.4960.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=5.9956.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=5.9956.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=6.4952.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=6.4952.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=6.9949.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=6.9949.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=7.4945.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=7.4945.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=7.9941.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=7.9941.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=8.4938.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=8.4938.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=8.9934.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=8.9934.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=9.4930.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=9.4930.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=9.9927.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=9.9927.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=10.4923.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=10.4923.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=10.9920.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=10.9920.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=11.4916.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=11.4916.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=11.9912.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=11.9912.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=12.4909.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=12.4909.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=12.9905.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=12.9905.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=13.4901.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=13.4901.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=13.9898.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=13.9898.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=14.4894.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=14.4894.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=14.9890.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=14.9890.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=15.4887.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=15.4887.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=15.9883.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=15.9883.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=16.4879.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=16.4879.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=16.9876.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=16.9876.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=17.4872.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=17.4872.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=17.9868.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=17.9868.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=18.4865.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=18.4865.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=18.9861.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=18.9861.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=19.4857.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=19.4857.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=19.9854.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=19.9854.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=20.4850.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=20.4850.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=20.9846.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=20.9846.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=21.4843.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=21.4843.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=21.9839.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=21.9839.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=22.4835.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=22.4835.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=22.9832.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=22.9832.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=23.4828.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=23.4828.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=23.9824.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=23.9824.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=24.4821.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=24.4821.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=24.9817.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=24.9817.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=25.4813.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=25.4813.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=25.9810.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=25.9810.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=26.4806.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=26.4806.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=26.9802.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=26.9802.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=27.4799.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=27.4799.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=27.9795.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=27.9795.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=28.4791.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=28.4791.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=28.9788.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=28.9788.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=29.4784.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=29.4784.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=29.9780.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=29.9780.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=30.4777.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=30.4777.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=30.9773.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=30.9773.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=31.4769.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=31.4769.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=31.9766.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=31.9766.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=32.4762.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=32.4762.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=32.9759.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=32.9759.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=33.4755.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=33.4755.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=33.9751.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=33.9751.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=34.4748.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=34.4748.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=34.9744.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=34.9744.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=35.4740.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=35.4740.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=35.9737.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=35.9737.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=36.4733.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=36.4733.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=36.9729.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=36.9729.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=37.4726.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=37.4726.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=37.9722.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=37.9722.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=38.4718.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=38.4718.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=38.9715.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=38.9715.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=39.4711.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=39.4711.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=39.9707.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=39.9707.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=40.4704.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=40.4704.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=40.9700.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=40.9700.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=41.4696.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=41.4696.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=41.9693.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=41.9693.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=42.4689.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=42.4689.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=42.9685.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=42.9685.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=43.4682.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=43.4682.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=43.9678.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=43.9678.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=44.4674.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=44.4674.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=44.9671.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=44.9671.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=45.4667.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=45.4667.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=45.9663.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=45.9663.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=46.4660.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=46.4660.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=46.9656.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=46.9656.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=47.4652.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=47.4652.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=47.9649.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=47.9649.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=48.4645.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=48.4645.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=48.9641.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=48.9641.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=49.4638.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=49.4638.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=49.9634.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=49.9634.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=50.4630.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=50.4630.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=50.9627.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=50.9627.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=51.4623.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=51.4623.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=51.9619.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=51.9619.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=52.4616.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=52.4616.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=52.9612.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=52.9612.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=53.4608.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=53.4608.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=53.9605.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=53.9605.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=54.4601.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=54.4601.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=54.9598.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=54.9598.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=55.4594.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=55.4594.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=55.9590.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=55.9590.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=56.4587.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=56.4587.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=56.9583.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=56.9583.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=57.4579.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=57.4579.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=57.9576.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=57.9576.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=58.4572.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=58.4572.png'
+
+
+basepath =
+
+    '../output'
+
+
+this_filename =
+
+    'coh_no_spatial_filter/coh_hanning_2_freq=58.9568.png'
+
+
+save_file =
+
+    '../output/coh_no_spatial_filter/coh_hanning_2_freq=58.9568.png'
+
+>> 
